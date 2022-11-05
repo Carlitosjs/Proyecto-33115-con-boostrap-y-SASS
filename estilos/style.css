@@ -12,12 +12,20 @@
 			padding:5px;
 			background-image: linear-gradient(276deg, #71C4FFFF 0%, #A100FFFF 100%);	
 		}
-		@media screen and (max-width:705px){
-			header{
-				height:27vh ;
 
+		@media screen and (max-width:1220px){
+		header{
+				position:static;
+				height: 100px;
 			}
 		}
+		@media screen and (max-width:705px){
+			header{
+				height: 220px;
+			}
+		}
+
+
 		
 		.index a{
 			text-decoration:none;
@@ -41,7 +49,7 @@
 
 
 		}
-			@media screen and (max-width:767px){
+			@media screen and (max-width:774px){
 				.index a{
 					display:none;
 				}
@@ -66,28 +74,21 @@
 			letter-spacing:1px;
 
 		}
-		@media screen and (max-width:767px){
+		@media screen and (max-width:774px){
 			.menu-index li{
 				margin-left:70px;
 				position: relative;
 
 			}
 		}
-		@media screen and (max-width:767px){
+		@media screen and (max-width:774px){
 			.menu-index ul{
 				display:inline-flex;
 				justify-items: center;
 				margin-top: 20px;
-
-
 			}
 		}
-		@media screen and (max-width:705px){
-			.menu-index {
-				width:650px;
-
-			}
-		}
+	
 		@media screen and (max-width:705px){
 			.menu-index ul {
 				display:flex;
@@ -103,9 +104,18 @@
 			align-items: center;
 			position:fixed;
 		}
-		@media screen and (max-width:767px){
+		@media screen and (max-width:774px){
 			nav{
 			position: absolute;
+			}
+		}
+		@media screen and (max-width:1220px){
+			nav{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				position: static;
+
 			}
 		}
 		
@@ -203,6 +213,12 @@
 		font-size:40px;
 		background-image:repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%);
 		}
+		@media screen and (max-width:768px){
+			.inicio{
+				width: 100%;
+			}
+			
+		}
 
 		.seccion-inicio{
 			color: whitesmoke;
@@ -221,9 +237,19 @@
 			display:block;
 			transition-duration:1s;
 		}
+		@media screen and (max-width:768px){
+			.navegacion{
+				display: inline-flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
 		/*iconos*/
 		.menu-lat ul li a span{
 			padding-right:5px;
+		}
+		.menu-lat ul{
+			list-style: none;
 		}
 		/* h2 del inicios*/
 		.center-inicio{
@@ -235,14 +261,24 @@
 			font-size:30px;
 			cursor: pointer;
 			transition-duration:2s;
-
 		}
 		/* Video de introduccion*/
-		iframe{
-			margin-left:350px;
-			margin-top:20px;
-			border:5px solid white;
+		.video{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
 		}
+		@media screen and (max-width:768px){
+			.video{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin-top:50% ;
+			}
+		}
+
+			
 		/* Titulo de Quien fue stephe*/
 		.stephen{
 			color:whitesmoke;
@@ -530,6 +566,7 @@
 			transform: translate3d(10px, 15px, -5px);
 		 }
 		/* ------------------seccion de registrate------------*/
+	
 
 		.menu-index-registrate li{
 			display: flex;
@@ -539,6 +576,34 @@
 			margin: 10px;
 			text-align: center;
 		}
+		@media screen and (min-width: 1024px){
+			.menu-index-registrate li{
+				margin-left: 30px;
+			}
+		}
+			@media screen and (max-width: 1024px){
+			.menu-index-registrate ul{
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 40px;
+			}
+		}
+
+		@media screen and (max-width: 768px){
+			.menu-index-registrate ul{
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 40px;
+			}
+		}
+		@media screen and (max-width: 591px){
+			.menu-index-registrate ul{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 40px;
+			}
+		}
+
 		.menu-index-registrate a{
 			color:whitesmoke;
 			text-decoration: none;
@@ -553,11 +618,26 @@
 			color:whitesmoke;
 			margin: 20px 0;
 		}
+		@media screen and (max-width: 768px){
+			.titulo{
+				color:black;
+				background-color: Yellow;
+			}
+		}
+
+
+		@media screen and (max-width: 591px){
+			.titulo{
+				color:black;
+				background-color: white;
+			}
+		}
 
 		.padre-formulario{
 			display: flex;
 			flex-direction: row;
 			justify-content:center;
+
 		}
 		.formulario-1{
 			display: grid;
