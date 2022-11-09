@@ -464,7 +464,7 @@
 			.center-inicio:hover{
 				transform:scale(1.5) ;
 			}
-			/* Por ahora esto es todo de la seccion inicio*/
+			------------------/* Por ahora esto es todo de la seccion inicio*/------------------
 
 			/*titulo de la pagina*/
 
@@ -627,6 +627,7 @@
 
 			}
 			/*Hasta Aca Seccion de Acerca de -Nikola Tesla-*/
+			---------------------------------------------------------------------------------------------
 			/*Comienza la seccion de contactanos*/
 
 			header{
@@ -638,70 +639,71 @@
 			font-size:30px;
 
 			}
-			.iconos-contacto{
-				margin-top:-250px;
-		}
-			.iconos-contacto span{
-			color: whitesmoke;
-			display:inline-block;
-			flex-direction:row;
-			justify-content:center;
-			margin-left:20px;
-			margin-right:8px;
-			display:inline;
-			}
-			h2{
-				color: whitesmoke;
-				font-weight:bolder;
-				font-weight:30px;
-				text-align:center;
-				margin-bottom: 20px;
-			}
-			.iconos-contacto li{
-			font-size:20px;
-				font-weight: bolder;
-				color: white;
-				text-align:center;
-				display:block;
-				margin-bottom: 20px;
-
-			}
-			.Cuadro-texto{
-				display:flex;
-				flex-direction: row ;
+			.padre-progress{
+				display: flex;
+				flex-direction: column;
 				justify-content: center;
+				align-items: center;
+				margin-bottom: 20px;
 			}
-			.buttom{
-				display:inline-flex;
-				margin-left: 43%;
-				height:25px;
-				width:70;
-				border: 2px double black;
-				border-radius:2px;
-			}
-			.buttom span{
-				text-align: center;
-				 box-shadow:18px 17px 40px 8px rgba(8,8,10,1),18px 17px 40px 8px rgba(8,8,10,1),
-			18px 17px 40px 8px rgba(8,8,10,1);
-			 background:#2E64FE;
-			 color:black;
-			 transition:2s;
-			 padding:0 20px;
 
+			.progress{
+				width: 50%;
+				margin-bottom: 10px;
 			}
-			.Cuadro-texto textarea{
-				background: transparent;
-				border: 2px double whitesmoke;
-				color:whitesmoke;
+			.area{
+				text-align: center;
+				color: whitesmoke;
+				border: 1px solid white;
+				padding: 0px 10px;
 			}
-			/*Hovers*/
-			.iconos-contacto li:hover{
-				color:#81BEF7;
+			.Titulo-progress{
+				color: whitesmoke;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.contactos{
+				color: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 10px;
+			}
+			.contactos ul li{
+				border: 2px solid white;
+				list-style: none;
+				margin-bottom: 10px;
+				padding: 0px 10px;
+			}
+			footer{
+				text-align: center;
+			}
+			.verde:hover{
 				cursor: pointer;
+				background-color:#128c7e;
 			}
-			.buttom span:hover{
-				transform: translate3d(10px, 15px, -5px);
-			 }
+			.azul:hover{
+				cursor:pointer;
+				background-color:#1DA1F2;
+						}
+			.instagram:hover{
+				cursor: pointer;
+				background-color:#E4405F;
+			}
+			.facebook:hover{
+				cursor: pointer;
+				background-color: #3b5998;
+			}
+			.github:hover{
+				cursor:pointer;
+				background-color: #171515;
+			}			
+
+
+
+		
+			
+			 
 			/* ------------------seccion de registrate------------*/
 		
 
