@@ -22,7 +22,7 @@
 			}
 			@media screen and (max-width:768px){
 				.header{
-					height: 150px;
+					height: 175px;
 				}
 			}
 		
@@ -90,11 +90,17 @@
 				letter-spacing:1px;
 
 			}
+			
 			@media screen and (max-width:768px){
 				.menu-index li{
 					margin-left:70px;
 					position: relative;
 
+				}
+			}
+			@media screen and (max-width:425px){
+				.menu-index li{
+				margin-left: 5px;
 				}
 			}
 			@media screen and (max-width:772px){
@@ -110,10 +116,11 @@
 					display:flex;
 					flex-direction: column;
 					align-items: center;
-					margin-top:0px;
+					margin-top:10px;
 
 				}
 			}
+			
 				nav{
 				display:flex;
 				justify-content: space-between;
@@ -468,32 +475,38 @@
 			.center-inicio:hover{
 				transform:scale(1.5) ;
 			}
-			------------------/* Por ahora esto es todo de la seccion inicio*/------------------
+			/* Por ahora esto es todo de la seccion inicio*/
+			.header-nikola{
+				display:flex;
+				justify-content:center;
+			}
+		
 
 			/*titulo de la pagina*/
-
 			header span{
-				color:#212054;
-			font-family: fantasy;
+			color:#212054;
+			font-family:fantasy;
 			font-style:oblique;
 			font-weight: lighter;
 			letter-spacing:1px;
 			font-size:60px;
-			display: block;
 			white-space: nowrap;
 			width: 12ch;
-			border right: 4px solid;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			border-right: 4px solid;
 			animation: typing 2s steps(12), blink .5s infinite step-end alternate;
 			overflow: hidden;
-			margin-left: 40%;
-			}
+		}
+		    
 			@keyframes typing {
-				from { width:0 }
+				from {width:0}
 			}
 			@keyframes blink{
 				50% {border-color: transparent;}
-
 			}
+		
 			/*background-image*/
 			.acerca-de-body{
 				background-image: url(https://wallpapercave.com/wp/wp1936436.jpg);
@@ -501,7 +514,6 @@
 			/*padre del parrafo informativo*/
 			.acerca-de-nikola{
 				text-align: center;
-				margin-top:-250px;
 
 			}
 			/*titulo del parrafo informativo*/
@@ -537,8 +549,12 @@
 			}
 			/* menu lateral*/
 			.menu-lat{
+				display:flex;			}
+
+			.menu-lat ul{
 				display: flex;
-			}
+				flex-direction: column;
+			}		
 			/* Empezamos con los Inventos de nicola*/
 			.la-radio{
 				text-align: center;
@@ -629,23 +645,27 @@
 			transform: rotateX(45deg);
 			}
 
-			}
 			/*Hasta Aca Seccion de Acerca de -Nikola Tesla-*/
-			---------------------------------------------------------------------------------------------
 			/*Comienza la seccion de contactanos*/
 
 			header{
-				color: ghostwhite;
-			font-family: fantasy;
+			color: ghostwhite;
 			font-style:oblique;
 			font-weight lighter;
 			letter-spacing:1px;
-			font-size:30px;
+			
 
+			}
+			.navbar-brand{
+				color: whitesmoke;
 			}
 			.menu-lat{
 				align-items: center;
 			}
+			.menu-lat ul{
+				padding-left: 0px;
+			}
+
 			.padre-progress{
 				display: flex;
 				flex-direction: column;
@@ -674,7 +694,6 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin-bottom: 10px;
 			}
 			.contactos ul li{
 				border: 2px solid white;
@@ -682,6 +701,11 @@
 				margin-bottom: 10px;
 				padding: 0px 10px;
 			}
+
+			.contactos ul{
+				padding-left: 0px;
+			}
+
 			footer{
 				text-align: center;
 			}
