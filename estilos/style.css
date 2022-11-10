@@ -232,11 +232,10 @@
 				header,.inicio,.seccion-inicio{
 					width:100%;
 					background-image: none;
+					padding: 0px;
 				}
 				
 			}
-
-
 			.inicio{
 			color: ghostwhite;
 			font-family: fantasy;
@@ -326,7 +325,7 @@
 			}
 			@media screen and (max-width:425px){
 				.video{
-					margin:40px;
+					margin:20px;
 				}
 			}
 			@media screen and (max-width:768px){
@@ -371,9 +370,7 @@
 			}
 			@media screen and (max-width:425px){
 				.stephen{
-					display: flex;
-					justify-content:center;
-					margin:30px 20px;
+					margin-bottom: 10px;
 				}
 			}
 			/*parrafo de información*/
