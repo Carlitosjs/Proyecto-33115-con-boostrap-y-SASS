@@ -326,7 +326,7 @@
 			}
 			@media screen and (max-width:425px){
 				.video{
-					margin-left: 40px;
+					margin:40px;
 				}
 			}
 			@media screen and (max-width:768px){
@@ -368,6 +368,11 @@
 				color:whitesmoke;
 				text-align:center;
 				margin-top:30px;
+			}
+			@media screen and (max-width:425px){
+				.stephen{
+					margin:40px 20px;
+				}
 			}
 			/*parrafo de información*/
 			.info{
@@ -638,6 +643,9 @@
 			letter-spacing:1px;
 			font-size:30px;
 
+			}
+			.menu-lat{
+				align-items: center;
 			}
 			.padre-progress{
 				display: flex;
