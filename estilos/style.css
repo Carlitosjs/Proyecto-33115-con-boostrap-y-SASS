@@ -371,7 +371,9 @@
 			}
 			@media screen and (max-width:425px){
 				.stephen{
-					margin:40px 20px;
+					display: flex;
+					justify-content:center;
+					margin:30px 20px;
 				}
 			}
 			/*parrafo de información*/
