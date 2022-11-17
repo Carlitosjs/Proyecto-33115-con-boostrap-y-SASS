@@ -1,84 +1,140 @@
-		<!DOCTYPE html>
-		<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<!--CDN CSS BOOSTRAP-->
-			<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-			<!--CSS Original-->
-			<link rel="stylesheet" type="text/css" href="../estilos/style.css">
-			<!--Link de Iconos-->
-			<link rel="stylesheet" type="text/css" href="../estilos/iconos/style.css">
-			<link rel="stylesheet" type="text/css" href="../estilos/iconos-contacto/style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-			<title>Contacto</title>
-		</head>
-		<body>
-			<!-- Encabezado de la pagina-->
-			<header>
-				<!-- Barra de Nav de la pagina-->
-				<nav class="navbar navbar-light bg-transparent mb-10">
-					<div class="container-fluid d-flex justify-content-center">
-						<a class="navbar-brand">Sección de Contacto</a>
-						<form class="d-flex">
-							<input class="form-control me-2" type="search" placeholder="Ir a.." aria-label="Search">
-							<button class="btn btn-outline-success" type="submit">Buscar</button>
-						</form>
-					</div>
-				</nav>
-			</header>
-			<!--Menu lat de navegacion de la pagina-->
-			<section class="menu-lat">
-				<ul>
-					<li><a href="../index.html"><span class="icon-home"></span>Inicio</a></li>
-					<li><a href="home.html"><span class="icon-map2"></span>Home</a></li>
-					<li><a href="contacto.html"><span class="icon-address-book"></span>Contacto</a></li>
-					<li><a href="registrate.html"><span class="icon-clipboard"></span>Registrate</a></li>
-					<li><a href="acerca de.html"><span class="icon-info"></span>Acerca de</a></li>
-				</ul>
-			</section>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CDN CSS BOOSTRAP-->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+	<!--CSS Original-->
+	<link rel="stylesheet" type="text/css" href="../estilos/style.css">
+	<!--Link de Iconos-->
+	<link rel="stylesheet" type="text/css" href="../estilos/iconos/style.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/iconos-contacto/style.css">
 
-			<!-- Titulo del contenido Principal de la Pagina-->
+	<title>Contacto</title>
+</head>
 
-			<h1 class="Titulo-progress"> Habilidades </h2>
+<body>
+	<!-- Encabezado de la pagina-->
+	<header>
+		<!-- Barra de Nav de la pagina-->
+		<nav class="navbar navbar-light bg-transparent mb-10">
+			<div class="container-fluid d-flex justify-content-center">
+				<a class="navbar-brand">Sección de Contacto</a>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Ir a.." aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
+			</div>
+		</nav>
+	</header>
+	<!--Menu lat de navegacion de la pagina-->
+	<nav class="menu-lat">
+		<ul>
+			<li><a href="../index.html"><span class="icon-home"></span>Inicio</a></li>
+			<li><a href="home.html"><span class="icon-map2"></span>Home</a></li>
+			<li><a href="contacto.html"><span class="icon-address-book"></span>Contacto</a></li>
+			<li><a href="registrate.html"><span class="icon-clipboard"></span>Registrate</a></li>
+			<li><a href="acerca de.html"><span class="icon-info"></span>Acerca de</a></li>
+		</ul>
+	</nav>
+	<p class="titulo-galeria">Galeria de Imagenes Del <span class="mark"> Mundo</span></p>
 
-				<div class="padre-progress">
-					<p class="area"> Javascript Knowledge</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
-					</div>
-					<p class="area"> CSS Knowledge</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-					</div>
-					<p class="area"> HTML5  Knowledge</p>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-					</div>
+<div class="padre-carousel">
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="/img/bing-bang.jpg" class="d-block w-100" alt="bing-bang-teoria">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Teoria Del Big Bang</h5>
+					<p>La Magnifica Expresion de Belleza de una Explosión planetaria</p>
 				</div>
-
-				<!-- Titulo del contenido secundario de la pagina-->
-
-				<h2 class="Titulo-progress">
-					Contactanos por estos medios!
-				</h2>
-				<div class="contactos">
-					<ul>
-						<li class="verde"><span class="icon-whatsapp"></span>Whatsapp</li>
-						<li class="azul"><span class="icon-twitter"></span>Twitter</li>
-						<li class="instagram"><span class="icon-instagram"></span>Instagram</li>
-						<li class="facebook"><span class="icon-facebook2"></span>Facebook </li>
-						<li class="github"><span class="icon-github"></span>Github</li>
-					</ul>
+			</div>
+			<div class="carousel-item">
+				<img src="/img/energia-hecha-mundo.jpg" class="d-flex align-items-center w-100" alt="energia-hecha-mundo">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>La Energia hecha un Mundo</h5>
+					<p>La energia misma vista desde otra dimensión.</p>
 				</div>
-				<!-- footer de la pagina-->
+			</div>
+			<div class="carousel-item">
+				<img src="/img/nebulosa-ojo-de-gato.jpg" class="d-block w-100" alt="nebulosa-ojo-de-gato">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Nebulosa Ojo de Gato</h5>
+					<p>Las nebulosas son regiones del medio interestelar constituidas por gases (principalmente hidrógeno y helio) además de elementos químicos en forma de polvo cósmico</p>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+</div>
+</div>
+	<!-- Titulo del contenido Principal de la Pagina-->
+
+	<h1 class="Titulo-progress"> Habilidades </h2>
+
+		<div class="padre-progress">
+			<p class="area"> Javascript Knowledge</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+					aria-valuemin="0" aria-valuemax="100">10%</div>
+			</div>
+			<p class="area"> CSS Knowledge</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+					aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+			</div>
+			<p class="area"> HTML5 Knowledge</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+					aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+			</div>
+		</div>
+
+		<!-- Titulo del contenido secundario de la pagina-->
+
+		<h2 class="Titulo-progress">
+			Contactanos por estos medios!
+		</h2>
+		<div class="contactos">
+			<ul>
+				<li class="verde"><span class="icon-whatsapp"></span>Whatsapp</li>
+				<li class="azul"><span class="icon-twitter"></span>Twitter</li>
+				<li class="instagram"><span class="icon-instagram"></span>Instagram</li>
+				<li class="facebook"><span class="icon-facebook2"></span>Facebook </li>
+				<li class="github"><span class="icon-github"></span>Github</li>
+			</ul>
+		</div>
+		<!-- footer de la pagina-->
 
 
-				<footer>
-					<h2>Nos Reservamos el derecho de Copyright ©</h2>
-				</footer>
-				<!-- CDN DE BOOSTRAP JS-->
-				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-			</body>
-			</html>
+		<footer>
+			<h2>Nos Reservamos el derecho de Copyright ©</h2>
+		</footer>
+		<!-- CDN DE BOOSTRAP JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"></script>
+</body>
+
+</html>
