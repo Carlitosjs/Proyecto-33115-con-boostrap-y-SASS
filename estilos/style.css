@@ -739,9 +739,9 @@
 	.titulo-galeria{
 		color: whitesmoke;
 		text-align: center;
-		font-weight: bold;
-		font-size: large;
-	}
+		font-weight: lighter;
+		font-size: 2.5rem;
+		}
 	.mark{
 		color: #171515;
 	}
@@ -858,6 +858,7 @@
 		.menu-index-registrate li {
 			margin-left: 30px;
 		}
+		
 	}
 
 	@media screen and (max-width: 1024px) {
