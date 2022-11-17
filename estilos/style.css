@@ -78,7 +78,7 @@
 	.menu-index li {
 		list-style: none;
 		margin-top: 35px;
-		margin: 10px;
+		margin: 8px;
 		border-top: 3px solid black;
 		border-bottom: 3px solid black;
 		border-left: 3px solid white;
@@ -858,7 +858,6 @@
 		.menu-index-registrate li {
 			margin-left: 30px;
 		}
-		
 	}
 
 	@media screen and (max-width: 1024px) {
