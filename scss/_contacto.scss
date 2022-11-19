@@ -1,0 +1,131 @@
+/*Comienza la seccion de contactanos*/
+
+/*encabezado de la pagina*/
+
+header {
+    color: ghost$color-primario-2;
+    font-style: oblique;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+    /*letra de la navbar de bootstrap*/
+    .navbar-brand {
+        color: $color-primario;
+    }
+}
+
+/* Padre de menu lat*/
+.menu-lat {
+    align-items: center;
+}
+
+/* Padre de los Li de el menu lat*/
+.menu-lat ul {
+    padding-left: 0px;
+}
+
+.titulo-galeria {
+    color: $color-primario;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+.mark {
+    color: #171515;
+}
+
+/* Padre de la galeria de Imagenes*/
+.padre-carousel {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Padre de la seccion de barras de Progreso*/
+
+.padre-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .progress {
+        width: 50%;
+        margin-bottom: 10px;
+
+    }
+}
+
+.area {
+    text-align: center;
+    color: $color-primario;
+    border: 1px solid $color-primario-2;
+    padding: 0px 10px;
+
+
+}
+
+/* Titulo de la seccion de la  barra de progreso*/
+.Titulo-progress {
+    color: $color-primario;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Padre contactos*/
+.contactos {
+    color: $color-primario-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Padre de los Li de contacto*/
+    ul {
+        padding-left: 0px;
+
+
+        /* Contactos elementos de lista*/
+         li {
+            border: 2px solid $color-primario-2;
+            list-style: none;
+            margin-bottom: 10px;
+            padding: 0px 10px;
+        }
+    }
+}
+
+/*Footer de seccion Contacto*/
+
+footer {
+    text-align: center;
+}
+
+/* Hover de elementos*/
+.verde:hover {
+    cursor: pointer;
+    background-color: #128c7e;
+}
+
+.azul:hover {
+    cursor: pointer;
+    background-color: #1DA1F2;
+}
+
+.instagram:hover {
+    cursor: pointer;
+    background-color: #E4405F;
+}
+
+.facebook:hover {
+    cursor: pointer;
+    background-color: #3b5998;
+}
+
+.github:hover {
+    cursor: pointer;
+    background-color: #171515;
+}
