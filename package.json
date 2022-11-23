@@ -17,10 +17,9 @@
     "url": "https://github.com/Carlitosjs/Proyecto-33115-sin-Bootstrap/issues"
   },
   "homepage": "https://github.com/Carlitosjs/Proyecto-33115-sin-Bootstrap#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
   },
-  "devDependencies": {},
   "description": ""
 }
