@@ -46,9 +46,7 @@ header {
 /* Padre de la seccion de barras de Progreso*/
 
 .padre-progress {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-direction-column-center;
     align-items: center;
     margin-bottom: 20px;
 
@@ -79,17 +77,15 @@ header {
 /* Padre contactos*/
 .contactos {
     color: $color-primario-2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    @include flex-direction-column-center-align-items;
+    
     /*Padre de los Li de contacto*/
     ul {
         padding-left: 0px;
 
 
         /* Contactos elementos de lista*/
-         li {
+        li {
             border: 2px solid $color-primario-2;
             list-style: none;
             margin-bottom: 10px;

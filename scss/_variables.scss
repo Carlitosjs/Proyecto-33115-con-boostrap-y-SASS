@@ -1,10 +1,49 @@
 /* Aca van las variables que son las caracteristicas repetitivas de mi sitio web ( como colores y etc*/
-$color-primario:whitesmoke;
+$color-primario: whitesmoke;
 $color-primario-2: white;
-$color-primario-3:ghostwhite;
+$color-primario-3: ghostwhite;
 
 
 /* Variables para medidas de mediaquery*/
-$pantallas-grandes:1220px;
-$pantallas-medianas:768px;
-$pantallas-pequenas:425px;
+$pantallas-grandes: 1220px;
+$pantallas-medianas: 768px;
+$pantallas-pequenas: 425px;
+
+
+/*MIXINS DE LA PAGINA*/
+
+@mixin margin-reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-direction-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-direction-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+@mixin flex-direction-column-center-align-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@mixin parrafos-acerca-de{
+    text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        color: $color-primario-2;
+        padding-top: 20px;
+        border: 1px solid $color-primario;
+        margin: 30px 200px;
+}
+
+/* EXTENDS*/

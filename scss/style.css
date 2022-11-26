@@ -3,7 +3,6 @@
 /* este archivo solo se usara para los import de todas las secciones*/
 /* Aca van las variables que son las caracteristicas repetitivas de mi sitio web ( como colores y etc*/
 /* Variables para medidas de mediaquery*/
-/*Reseteo de margenes */
 * {
   margin: 0;
   padding: 0;
@@ -14,30 +13,45 @@ body {
   background-image: url(https://images3.alphacoders.com/194/thumb-1920-194225.jpg);
 }
 
-/*Encabezado y sus responsive*/
+/* Encabezado en sus diferentes Responsive*/
 header {
   height: 80px;
   padding: 5px;
   background-image: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
   position: static;
 }
+
 @media screen and (max-width: 1220px) {
-  header header {
+  header {
     position: static;
     height: 100px;
   }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: static;
+  }
 }
 @media screen and (max-width: 768px) {
-  header .header {
+  .header {
     height: 175px;
+  }
+  .header .menu-index li {
+    margin-left: 70px;
+    position: relative;
   }
 }
 @media screen and (max-width: 425px) {
-  header .header {
+  .header {
     height: 370px;
   }
 }
-
+@media screen and (max-width: 425px) and (max-width: 425px) {
+  .header .menu-index li {
+    margin-left: 5px;
+  }
+}
 /* Frase de encabezado de Einstein*/
 .index {
   font-family: sans-serif cursive;
@@ -51,7 +65,6 @@ header {
   color: whitesmoke;
   margin: 0px 10px;
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-  /* link de refencia de Einstein*/
 }
 .index .index a {
   text-decoration: none;
@@ -62,15 +75,13 @@ header {
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
 }
 
-/* Seccion del menu y sus responsive*/
 /* Padre de los elemntos de navegcion*/
 .menu-index ul {
   display: flex;
   width: 100%;
+  /* Elementos de lista */
 }
-
-/* Elementos de lista */
-.menu-index li {
+.menu-index ul li {
   list-style: none;
   margin-top: 35px;
   margin: 6px;
@@ -86,61 +97,34 @@ header {
   transition: 1s;
   font-family: fantasy;
   letter-spacing: 1px;
-}
-
-.menu-index {
   /*Elementos de link de Href*/
 }
-.menu-index .menu-index a {
+.menu-index ul li .menu-index a {
   text-decoration: none;
   color: whitesmoke;
 }
-@media screen and (max-width: 768px) {
-  .menu-index .menu-index li {
-    margin-left: 70px;
-    position: relative;
-  }
-}
-@media screen and (max-width: 425px) {
-  .menu-index .menu-index li {
-    margin-left: 5px;
-  }
-}
+
 @media screen and (max-width: 772px) {
-  .menu-index .menu-index ul {
+  .menu-index ul {
     display: inline-flex;
     justify-items: center;
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 705px) {
-  .menu-index .menu-index ul {
+  .menu-index ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
   }
 }
-
-/*Menu de navegación*/
+/* Padre navegacion*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-}
-@media screen and (max-width: 772px) {
-  nav nav {
-    position: absolute;
-  }
-}
-@media screen and (max-width: 1220px) {
-  nav nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: static;
-  }
 }
 
 /*Seccion de Frases de Einstein con su imagen*/
@@ -162,29 +146,23 @@ nav {
   justify-items: center;
 }
 
-/*Seccion de Descripción -index.html*/
-.descripcion {
-  /* Parrafo de la seccion de descripcion*/
-  /* Span de la seccion de Descripcion*/
+/*Elementos de link de Href*/
+.menu-index a {
+  text-decoration: none;
+  color: whitesmoke;
 }
-.descripcion .descripcion p {
+
+/* Parrafo de la seccion de descripcion*/
+.descripcion p {
   margin-top: 50px;
   font-size: 40px;
   font-family: fantasy;
   font-weight: 600px;
   margin-bottom: 50px;
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
+  /* Span de la seccion de Descripcion*/
 }
-@media screen and (max-width: 767px) {
-  .descripcion .descripcion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
-.descripcion .descripcion span {
+.descripcion p span {
   margin-top: 50px;
   font-size: 40px;
   font-family: fantasy;
@@ -193,12 +171,23 @@ nav {
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
 }
 
-.footer footer p {
-  margin-top: 150px;
-  font-size: 30px;
+@media screen and (max-width: 767px) {
+  .descripcion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* Span de la seccion de Descripcion*/
+.descripcion span {
+  margin-top: 50px;
+  font-size: 40px;
   font-family: fantasy;
+  font-weight: 600px;
   margin-bottom: 50px;
-  text-align: center;
+  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
 }
 
 /* Hover de Algunos Elementos*/
@@ -220,26 +209,96 @@ nav {
   background: blue;
 }
 
-/*--------------Hasta aca es la seccion del Home o Index Html--------*/
+footer p {
+  margin-top: 150px;
+  font-size: 30px;
+  font-family: fantasy;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*--------------Hasta aca es la seccion del Stephen Html--------*/
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
     height: 100px;
     text-align: center;
   }
+  header .menu-lat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .menu-lat .inicio {
+    width: 100%;
+    text-align: center;
+  }
+  header .menu-lat .inicio .menu-lat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .menu-lat .inicio .menu-lat .menu-lat ul {
+    display: flex;
+    list-style: none;
+  }
+  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video .quien-fue-stephen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video .quien-fue-stephen .logros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 50px;
+  }
 }
 @media screen and (max-width: 425px) {
-  header,
-.inicio,
-.seccion-inicio {
+  header {
     width: 100%;
     background-image: none;
     padding: 0px;
   }
+  header nav .menu-lat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  header .menu-lat ul .stephen,
+.inicio .menu-lat ul .stephen,
+.seccion-inicio .menu-lat ul .stephen {
+    margin-bottom: 10px;
+  }
+  header .menu-lat ul .stephen .video,
+.inicio .menu-lat ul .stephen .video,
+.seccion-inicio .menu-lat ul .stephen .video {
+    margin: 20px;
+  }
+  header .menu-lat ul .stephen .video .info,
+.inicio .menu-lat ul .stephen .video .info,
+.seccion-inicio .menu-lat ul .stephen .video .info {
+    padding: 10px;
+  }
 }
 /* Titulo 1 de la pagina*/
 .inicio {
-  color: ghost white;
+  color: ghostwhite;
   font-family: fantasy;
   font-style: oblique;
   font-weight: lighter;
@@ -248,12 +307,6 @@ nav {
   background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
 }
 
-@media screen and (max-width: 768px) {
-  .inicio {
-    width: 100%;
-    text-align: center;
-  }
-}
 /* Titulo  de la pagina*/
 .seccion-inicio {
   color: whitesmoke;
@@ -261,7 +314,11 @@ nav {
   font-size: 30px;
 }
 
-/*elementos de lista (li)*/
+.menu-lat {
+  display: flex;
+  flex-direction: row;
+  /*elementos de lista (li)*/
+}
 .menu-lat ul li a {
   text-decoration: none;
   color: white;
@@ -272,55 +329,26 @@ nav {
   margin-left: 10px;
   display: block;
   transition-duration: 1s;
+  /*iconos*/
 }
-
-@media screen and (max-width: 425px) {
-  .menu-lat ul {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-lat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-lat ul {
-    display: flex;
-  }
-}
-/*iconos*/
-.menu-lat ul li a span {
+.menu-lat ul li a ul li a span {
   padding-right: 5px;
 }
-
-.menu-lat ul {
+.menu-lat ul li a ul li a span ul {
   list-style: none;
 }
 
 /* h2 del inicios*/
 .center-inicio {
-  color: ghost white;
+  color: ghostwhite;
   justify-content: center;
   text-align: center;
   display: block;
-  margin-top: -250px;
   font-size: 30px;
   cursor: pointer;
   transition-duration: 2s;
 }
 
-@media screen and (max-width: 768px) {
-  .center-inicio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-}
 /* Video de introduccion*/
 .video {
   display: flex;
@@ -328,55 +356,47 @@ nav {
   justify-content: center;
 }
 
-@media screen and (max-width: 425px) {
-  .video {
-    margin: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .video {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 /*div contenedor de la seccion quien es Stephen*/
 .quien-fue-stephen {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Titulo de Quien fue stephe*/
 }
-
-@media screen and (max-width: 768px) {
-  .quien-fue-stephen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .quien-fue-stephen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
-/* Titulo de Quien fue stephe*/
-.stephen {
+.quien-fue-stephen .stephen {
   color: whitesmoke;
   text-align: center;
   margin-top: 30px;
 }
 
-@media screen and (max-width: 425px) {
-  .stephen {
-    margin-bottom: 10px;
+@media screen and (max-width: 1220px) {
+  .quien-fue-stephen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .quien-fue-stephen .info {
+    text-align: center;
+    padding: 50px;
+  }
+  .quien-fue-stephen .info .stephen-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .quien-fue-stephen .info .stephen-img .logros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .quien-fue-stephen .info .stephen-img .logros .logros img {
+    width: 350px;
+    height: 350px;
   }
 }
 /*parrafo de información*/
@@ -389,33 +409,14 @@ nav {
   text-align: center;
 }
 
-@media screen and (min-width: 425px) {
-  .info {
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .info {
-    text-align: center;
-    padding: 50px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .stephen-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 /*div contenedor de logros*/
 .logros {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*elementos de lista*/
 }
-
-/*elementos de lista*/
 .logros li {
   color: white;
   font-family: cursive;
@@ -426,31 +427,6 @@ nav {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
-  .logros {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 50px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .logros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .logros img {
-    width: 350px;
-    height: 350px;
-  }
-}
 .logros p {
   /*parrafo informativo*/
   color: whitesmoke;
@@ -474,14 +450,173 @@ footer {
   transform: scale(1.5);
 }
 
-/* Por ahora esto es todo de la seccion inicio*/
-.header-nikola {
+/* ------------------seccion de registrate------------*/
+/* Elementos li de la lista*/
+.menu-index-registrate li {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  padding: 8px;
+  margin: 10px;
+  text-align: center;
+  /* Elementos Href de los li*/
+}
+.menu-index-registrate li a {
+  color: whitesmoke;
+  text-decoration: none;
+  /* Iconos de la lista*/
+}
+.menu-index-registrate li a span {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1220px) {
+  .menu-index-registrate li {
+    margin-left: 30px;
+  }
+  .menu-index-registrate li ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-index-registrate ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 591px) {
+  .menu-index-registrate ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .menu-index-registrate ul .titulo {
+    color: black;
+    background-color: Yellow;
+  }
+}
+/* titulo principal de la pagina*/
+.titulo {
+  text-align: center;
+  color: whitesmoke;
+  margin: 20px 0;
+}
+
+/*Contenedor de los formularios*/
+.padre-formulario {
   display: flex;
   justify-content: center;
 }
 
-/*titulo de la pagina*/
-header p {
+/*Comienzo de formularios*/
+.formulario-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.formulario-1 .nombre,
+.formulario-1 .apellido,
+.formulario-1 .contraseña,
+.formulario-1 .email {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.formulario-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+.formulario-2 .gustos,
+.formulario-2 .gustos-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.gustos,
+.gustos-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.gustos input,
+.gustos-1 input {
+  margin-bottom: 10px;
+}
+
+label {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.formulario-3 {
+  display: grid;
+  color: whitesmoke;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-template-rows: 5px 20px 20px;
+  grid-row-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.formulario-4 {
+  color: white;
+  display: grid;
+  grid-row-gap: 10px;
+  place-items: center;
+}
+.formulario-4 .seleccion,
+.formulario-4 .fechas {
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Final de formularios*/
+/*Botones del Formulario*/
+.botones {
+  display: flex;
+  flex-direction: column;
+}
+.botones .botones-1 {
+  color: whitesmoke;
+  background-color: transparent;
+  border: white;
+  box-shadow: 1px 2px 2px white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.botones-2 {
+  box-shadow: 18px 17px 40px 8px rgb(8, 8, 10), 18px 17px 40px 8px rgb(8, 8, 10) 18px 17px 40px 8px rgb(8, 8, 10);
+  background: #2E64FE;
+  color: black;
+  padding: 5px 20px;
+  margin: 20px 0px;
+}
+
+/* Por ahora esto es todo de la seccion inicio*/
+.header-nikola {
+  display: flex;
+  justify-content: center;
+  /*titulo de la pagina*/
+}
+.header-nikola span {
   color: #212054;
   font-family: fantasy;
   font-style: oblique;
@@ -489,9 +624,6 @@ header p {
   letter-spacing: 1px;
   font-size: 60px;
   width: 12ch;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   border-right: 4px solid;
   -webkit-animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
           animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
@@ -519,6 +651,53 @@ header p {
     border-color: transparent;
   }
 }
+@media screen and (max-width: 425px) {
+  .header-nikola {
+    background-image: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
+    width: 100%;
+  }
+  .header-nikola .nikola-span {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+  }
+  .header-nikola .nikola-span .acerca-de-nikola {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla .el-bombillo {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla .el-bombillo .rayos-x {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+}
 /*background-image*/
 .acerca-de-body {
   background-image: url(https://wallpapercave.com/wp/wp1936436.jpg);
@@ -527,24 +706,22 @@ header p {
 /*padre del parrafo informativo*/
 .acerca-de-nikola {
   text-align: center;
+  color: white;
 }
-
-/*titulo del parrafo informativo*/
 .acerca-de-nikola span {
   color: whitesmoke;
   font-size: 25px;
   font-weight: bolder;
 }
-
-/* Parrafo informativo*/
 .acerca-de-nikola p {
-  text-align: center;
   font-size: 20px;
   font-weight: bolder;
   color: white;
-  padding-top: 20px;
-  border: 1px solid whitesmoke;
-  margin: 30px 200px;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /*--Seccion de Acerca de Nicola Tesla--*/
@@ -555,9 +732,8 @@ header p {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  /* Titulo del segundo parrafo*/
 }
-
-/* Titulo del segundo parrafo*/
 .descripcion-nikola h2 {
   color: whitesmoke;
 }
@@ -566,7 +742,6 @@ header p {
 .menu-lat {
   display: flex;
 }
-
 .menu-lat ul {
   display: flex;
   flex-direction: column;
@@ -579,11 +754,6 @@ header p {
   margin: 0px 20px;
 }
 
-.la-radio-tesla h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .la-radio-tesla p {
   text-align: center;
   font-size: 20px;
@@ -591,7 +761,11 @@ header p {
   color: white;
   padding-top: 20px;
   border: 1px solid whitesmoke;
-  margin: 30px 200px;
+}
+
+.la-radio-tesla h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .el-bombillo {
@@ -600,7 +774,6 @@ header p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .el-bombillo p {
   text-align: center;
   font-size: 20px;
@@ -608,30 +781,25 @@ header p {
   color: white;
   padding-top: 20px;
   border: 1px solid whitesmoke;
-  margin: 30px 200px;
 }
 
 .rayos-x {
   text-align: center;
 }
-
 .rayos-x h2 {
   text-align: center;
   color: whitesmoke;
   margin: 0px 20px;
 }
-
-.rayos-x p {
+.rayos-x h2 p {
   text-align: center;
   font-size: 20px;
   font-weight: bolder;
   color: white;
   padding-top: 20px;
   border: 1px solid whitesmoke;
-  margin: 30px 200px;
 }
-
-.rayos-x img {
+.rayos-x h2 p img {
   margin-bottom: 30px;
 }
 
@@ -641,7 +809,6 @@ header p {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .Otros-Inventos img {
   width: 70%;
   height: 70%;
@@ -650,8 +817,7 @@ header p {
   opacity: 0.3;
   transition: 2s;
 }
-
-.Otros-Inventos p {
+.Otros-Inventos img p {
   font-size: 20px;
   font-weight: bolder;
   color: white;
@@ -674,10 +840,9 @@ header {
   font-style: oblique;
   font-weight: lighter;
   letter-spacing: 1px;
+  /*letra de la navbar de bootstrap*/
 }
-
-/*letra de la navbar de bootstrap*/
-.navbar-brand {
+header .navbar-brand {
   color: whitesmoke;
 }
 
@@ -718,9 +883,7 @@ header {
   align-items: center;
   margin-bottom: 20px;
 }
-
-/* barras en sí*/
-.progress {
+.padre-progress .progress {
   width: 50%;
   margin-bottom: 10px;
 }
@@ -745,14 +908,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*Padre de los Li de contacto*/
 }
-
-/*Padre de los Li de contacto*/
 .contactos ul {
   padding-left: 0px;
+  /* Contactos elementos de lista*/
 }
-
-/* Contactos elementos de lista*/
 .contactos ul li {
   border: 2px solid white;
   list-style: none;
@@ -789,168 +950,4 @@ footer {
 .github:hover {
   cursor: pointer;
   background-color: #171515;
-}
-
-/* ------------------seccion de registrate------------*/
-/* Elementos li de la lista*/
-.menu-index-registrate li {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid whitesmoke;
-  padding: 8px;
-  margin: 10px;
-  text-align: center;
-}
-
-@media screen and (min-width: 1024px) {
-  .menu-index-registrate li {
-    margin-left: 30px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .menu-index-registrate ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-index-registrate ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 591px) {
-  .menu-index-registrate ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-}
-/* Elementos Href de los li*/
-.menu-index-registrate a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-/* Iconos de la lista*/
-.menu-index-registrate span {
-  margin-right: 8px;
-}
-
-/* titulo principal de la pagina*/
-.titulo {
-  text-align: center;
-  color: whitesmoke;
-  margin: 20px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .titulo {
-    color: black;
-    background-color: Yellow;
-  }
-}
-@media screen and (max-width: 591px) {
-  .titulo {
-    color: black;
-    background-color: white;
-  }
-}
-/*Contenedor de los formularios*/
-.padre-formulario {
-  display: flex;
-  justify-content: center;
-}
-
-/*Comienzo de formularios*/
-.formulario-1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.nombre, .apellido, .contraseña, .email {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.formulario-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  color: whitesmoke;
-}
-
-.gustos, .gustos-1 {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.gustos input, .gustos-1 input {
-  margin-bottom: 10px;
-}
-
-label {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
-.formulario-3 {
-  display: grid;
-  color: whitesmoke;
-  grid-template-columns: 1fr;
-  place-items: center;
-  grid-template-rows: 5px 20px 20px;
-  grid-row-gap: 10px;
-  margin-bottom: 50px;
-}
-
-.formulario-4 {
-  color: white;
-  display: grid;
-  grid-row-gap: 10px;
-  place-items: center;
-}
-
-.seleccion,
-.fechas {
-  margin: 20px 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-/*Final de formularios*/
-/*Botones del Formulario*/
-.botones {
-  display: flex;
-  flex-direction: column;
-}
-
-.botones-1 {
-  color: whitesmoke;
-  background-color: transparent;
-  border: white;
-  box-shadow: 1px 2px 2px white;
-  border: 2px solid white;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.botones-2 {
-  box-shadow: 18px 17px 40px 8px rgb(8, 8, 10), 18px 17px 40px 8px rgb(8, 8, 10) 18px 17px 40px 8px rgb(8, 8, 10);
-  background: #2E64FE;
-  color: black;
-  padding: 5px 20px;
-  margin: 20px 0px;
 }/*# sourceMappingURL=style.css.map */

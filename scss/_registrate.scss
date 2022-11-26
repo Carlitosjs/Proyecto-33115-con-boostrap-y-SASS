@@ -25,35 +25,6 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .menu-index-registrate li {
-        margin-left: 30px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .menu-index-registrate ul {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: $pantallas-medianas) {
-    .menu-index-registrate ul {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 591px) {
-    .menu-index-registrate ul {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-}
 
 
 
@@ -64,20 +35,10 @@
     margin: 20px 0;
 }
 
-@media screen and (max-width: $pantallas-medianas) {
-    .titulo {
-        color: black;
-        background-color: Yellow;
-    }
-}
 
 
-@media screen and (max-width: 591px) {
-    .titulo {
-        color: black;
-        background-color: $color-primario-2;
-    }
-}
+
+
 
 /*Contenedor de los formularios*/
 .padre-formulario {
@@ -87,10 +48,8 @@
 
 /*Comienzo de formularios*/
 .formulario-1 {
-    display: flex;
-    flex-direction: column;
+    @include flex-direction-column-center-align-items;
     margin-bottom: 10px;
-    align-items: center;
 
     .nombre,
     .apellido,
@@ -107,9 +66,7 @@
 
 
 .formulario-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-direction-column-center-align-items;
     margin-bottom: 40px;
     color: $color-primario;
 
@@ -191,10 +148,62 @@ label {
     }
 
 }
+
 .botones-2 {
     box-shadow: 18px 17px 40px 8px rgba(8, 8, 10, 1), 18px 17px 40px 8px rgba(8, 8, 10, 1) 18px 17px 40px 8px rgba(8, 8, 10, 1);
     background: #2E64FE;
     color: black;
     padding: 5px 20px;
     margin: 20px 0px;
+}
+
+@media screen and (max-width:1440px) {
+    .navegacion {
+        justify-content: center;
+    }
+}
+
+
+/* Medias querys de Seccion Registrate*/
+@media screen and (min-width: $pantallas-grandes) {
+
+    .menu-index-registrate ul {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+
+        li {
+
+            margin-left: 30px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: $pantallas-medianas) {
+    .titulo {
+        color: black;
+        background-color: Yellow;
+    }
+
+    .menu-index-registrate ul {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 591px) {
+
+    .titulo {
+        color: black;
+        background-color: $color-primario-2;
+    }
+
+    .menu-index-registrate ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
 }
