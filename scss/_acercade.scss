@@ -147,7 +147,6 @@
 
 .Otros-Inventos {
     @include flex-direction-column-center-align-items;
-    flex-wrap: wrap;
 
 
 
@@ -211,9 +210,7 @@
 
     .el-bombillo {
         font-size: small;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-direction-column-center;
         align-items: center;
         text-align: center;
         margin: 0;
