@@ -168,8 +168,8 @@ label {
 @media screen and (min-width: $pantallas-grandes) {
 
     .menu-index-registrate ul {
-        display: flex;
-        flex-direction: row;
+        @include flex-direction-row-center;
+        align-items: center;
         margin-bottom: 40px;
 
         li {
@@ -188,8 +188,7 @@ label {
     }
 
     .menu-index-registrate ul {
-        display: flex;
-        flex-direction: row;
+        @include flex-direction-row-center;
         margin-bottom: 40px;
     }
 }
@@ -202,8 +201,7 @@ label {
     }
 
     .menu-index-registrate ul {
-        display: flex;
-        flex-direction: column;
+        @include flex-direction-column-center-align-items;
         margin-bottom: 40px;
     }
 }
