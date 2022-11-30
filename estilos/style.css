@@ -522,7 +522,7 @@ label {
     font-style: oblique;
     font-weight: lighter;
     letter-spacing: 1px;
-    font-size: 60px;
+    font-size: 35px;
     width: 12ch;
     border-right: 4px solid;
     animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;

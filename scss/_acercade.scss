@@ -2,7 +2,8 @@
 .header-nikola {
     display: flex;
     justify-content: center;
-
+    
+    
     /*titulo de la pagina*/
     span {
         color: #212054;
@@ -10,13 +11,14 @@
         font-style: oblique;
         font-weight: lighter;
         letter-spacing: 1px;
-        font-size: 60px;
-        width: 12ch;
+        font-size: 35px;
+        width:12ch;
         border-right: 4px solid;
         animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
         overflow: hidden;
     }
 }
+
 
 
 
