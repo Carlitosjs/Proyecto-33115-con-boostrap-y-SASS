@@ -3,138 +3,89 @@
 /* este archivo solo se usara para los import de todas las secciones*/
 /* Aca van las variables que son las caracteristicas repetitivas de mi sitio web ( como colores y etc*/
 /* Variables para medidas de mediaquery*/
+/*MIXINS DE LA PAGINA*/
+/* EXTENDS*/
+.descripcion p, .descripcion p span, .descripcion span {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: 600px;
+  margin-bottom: 50px;
+  background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%); }
+
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /* Cuerpo de Pagina*/
 body {
-  background-image: url(https://images3.alphacoders.com/194/thumb-1920-194225.jpg);
-}
+  background-image: url(https://images3.alphacoders.com/194/thumb-1920-194225.jpg); }
 
 /* Encabezado en sus diferentes Responsive*/
 header {
   height: 80px;
   padding: 5px;
-  background-image: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
+  background-image: linear-gradient(276deg, #71C4FFFF 0%, #A100FFFF 100%);
   position: static;
-}
-
-@media screen and (max-width: 1220px) {
-  header {
-    position: static;
-    height: 100px;
-  }
+  /* Padre navegacion*/ }
   header nav {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: static;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    height: 175px;
-  }
-  .header .menu-index li {
-    margin-left: 70px;
-    position: relative;
-  }
-}
-@media screen and (max-width: 425px) {
-  .header {
-    height: 370px;
-  }
-}
-@media screen and (max-width: 425px) and (max-width: 425px) {
-  .header .menu-index li {
-    margin-left: 5px;
-  }
-}
-/* Frase de encabezado de Einstein*/
-.index {
-  font-family: sans-serif cursive;
-  font-size: 40px;
-  font-weight: 400;
-  padding-left: 15px;
-  cursor: pointer;
-  font-stretch: 50%;
-  display: flex;
-  text-decoration: none;
-  color: whitesmoke;
-  margin: 0px 10px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-}
-.index .index a {
-  text-decoration: none;
-  font-size: 40px;
-  font-family: fantasy;
-  font-weight: 600px;
-  color: black;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-}
-
-/* Padre de los elemntos de navegcion*/
-.menu-index ul {
-  display: flex;
-  width: 100%;
-  /* Elementos de lista */
-}
-.menu-index ul li {
-  list-style: none;
-  margin-top: 35px;
-  margin: 6px;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
-  border-color: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
-  border-radius: 4px;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: bolder;
-  transition: 1s;
-  font-family: fantasy;
-  letter-spacing: 1px;
-  /*Elementos de link de Href*/
-}
-.menu-index ul li .menu-index a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-@media screen and (max-width: 772px) {
-  .menu-index ul {
-    display: inline-flex;
-    justify-items: center;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 705px) {
-  .menu-index ul {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-  }
-}
-/* Padre navegacion*/
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
+    /* Padre de los elemntos de navegcion*/ }
+    header nav .index {
+      font-family: sans-serif cursive;
+      font-size: 40px;
+      font-weight: 400;
+      padding-left: 15px;
+      cursor: pointer;
+      font-stretch: 50%;
+      display: flex;
+      text-decoration: none;
+      color: whitesmoke;
+      margin: 0px 10px;
+      background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%); }
+      header nav .index a {
+        text-decoration: none;
+        font-size: 40px;
+        font-family: fantasy;
+        font-weight: 600px;
+        color: black;
+        background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%); }
+    header nav .menu-index ul {
+      display: flex;
+      width: 100%;
+      /* Elementos de lista */ }
+      header nav .menu-index ul li {
+        list-style: none;
+        margin-top: 35px;
+        margin: 6px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+        border-color: linear-gradient(276deg, #71C4FFFF 0%, #A100FFFF 100%);
+        border-radius: 4px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        transition: 1s;
+        font-family: fantasy;
+        letter-spacing: 1px;
+        /*Elementos de link de Href*/ }
+        header nav .menu-index ul li a {
+          text-decoration: none;
+          color: whitesmoke; }
 
+/* Frase de encabezado de Einstein*/
 /*Seccion de Frases de Einstein con su imagen*/
 .frases {
-  padding-top: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-}
+  padding-top: 50px;
+  flex-wrap: wrap; }
 
 /* Imagen de Einstein*/
 .imagen img {
@@ -143,159 +94,86 @@ nav {
   transition-duration: 2s;
   transition-timing-function: linear;
   opacity: 0.5;
-  justify-items: center;
-}
+  justify-items: center; }
 
 /*Elementos de link de Href*/
 .menu-index a {
   text-decoration: none;
-  color: whitesmoke;
-}
+  color: whitesmoke; }
 
 /* Parrafo de la seccion de descripcion*/
 .descripcion p {
-  margin-top: 50px;
-  font-size: 40px;
-  font-family: fantasy;
-  font-weight: 600px;
-  margin-bottom: 50px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-  /* Span de la seccion de Descripcion*/
-}
-.descripcion p span {
-  margin-top: 50px;
-  font-size: 40px;
-  font-family: fantasy;
-  font-weight: 600px;
-  margin-bottom: 50px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-}
+  /* Span de la seccion de Descripcion*/ }
 
-@media screen and (max-width: 767px) {
-  .descripcion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
 /* Span de la seccion de Descripcion*/
-.descripcion span {
-  margin-top: 50px;
-  font-size: 40px;
-  font-family: fantasy;
-  font-weight: 600px;
-  margin-bottom: 50px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-}
-
 /* Hover de Algunos Elementos*/
 .menu-index li:hover {
-  background-image: linear-gradient(90deg, #a100ff 0%, #313372 50%);
-  transform: translate3d(10px, 15px, -5px);
-}
+  background-image: linear-gradient(90deg, #A100FFFF 0%, #313372FF 50%);
+  transform: translate3d(10px, 15px, -5px); }
 
 .imagen img:hover {
   transform: rotateY(45deg) rotateX(45deg);
-  opacity: 1;
-}
+  opacity: 1; }
 
 .frases p:hover {
-  color: skyblue;
-}
+  color: skyblue; }
 
 .span-mundo:hover {
-  background: blue;
-}
+  background: blue; }
 
 footer p {
   margin-top: 150px;
   font-size: 30px;
   font-family: fantasy;
   margin-bottom: 50px;
-  text-align: center;
-}
+  text-align: center; }
+
+/* MEDIA QUERY DE INDEX:HTML*/
+@media screen and (max-width: 1220px) {
+  header {
+    position: static;
+    height: 100px; }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: static; } }
+
+@media screen and (max-width: 772px) {
+  .menu-index ul {
+    display: inline-flex;
+    justify-items: center;
+    margin-top: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 175px; }
+    .header .menu-index li {
+      margin-left: 70px;
+      position: relative; } }
+
+@media screen and (max-width: 767px) {
+  .descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; } }
+
+@media screen and (max-width: 705px) {
+  .menu-index ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; } }
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 370px; }
+    .header .menu-index li {
+      margin-left: 5px; } }
 
 /*--------------Hasta aca es la seccion del Stephen Html--------*/
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-  }
-  header .menu-lat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  header .menu-lat .inicio {
-    width: 100%;
-    text-align: center;
-  }
-  header .menu-lat .inicio .menu-lat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .menu-lat .inicio .menu-lat .menu-lat ul {
-    display: flex;
-    list-style: none;
-  }
-  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video .quien-fue-stephen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-  }
-  header .menu-lat .inicio .menu-lat .menu-lat ul .center-inicio .video .quien-fue-stephen .logros {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 50px;
-  }
-}
-@media screen and (max-width: 425px) {
-  header {
-    width: 100%;
-    background-image: none;
-    padding: 0px;
-  }
-  header nav .menu-lat {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
-  header .menu-lat ul .stephen,
-.inicio .menu-lat ul .stephen,
-.seccion-inicio .menu-lat ul .stephen {
-    margin-bottom: 10px;
-  }
-  header .menu-lat ul .stephen .video,
-.inicio .menu-lat ul .stephen .video,
-.seccion-inicio .menu-lat ul .stephen .video {
-    margin: 20px;
-  }
-  header .menu-lat ul .stephen .video .info,
-.inicio .menu-lat ul .stephen .video .info,
-.seccion-inicio .menu-lat ul .stephen .video .info {
-    padding: 10px;
-  }
-}
 /* Titulo 1 de la pagina*/
 .inicio {
   color: ghostwhite;
@@ -304,39 +182,33 @@ footer p {
   font-weight: lighter;
   letter-spacing: 1px;
   font-size: 40px;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-}
+  background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%); }
 
 /* Titulo  de la pagina*/
 .seccion-inicio {
   color: whitesmoke;
-  background-image: repeating-linear-gradient(315deg, rgba(0, 255, 255, 0.1803921569) 92%, rgba(7, 58, 255, 0) 100%), repeating-radial-gradient(75% 75% at 238% 218%, rgba(0, 255, 255, 0.0705882353) 30%, rgba(7, 58, 255, 0.0784313725) 39%), radial-gradient(99% 99% at 109% 2%, #00c9ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(99% 99% at 21% 78%, #7b00ff 0%, rgba(7, 58, 255, 0) 100%), radial-gradient(160% 154% at 711px -303px, #073aff 12%, #7b00ff 94%);
-  font-size: 30px;
-}
+  background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #073AFFFF 12%, #7B00FFFF 94%);
+  font-size: 30px; }
 
 .menu-lat {
   display: flex;
   flex-direction: row;
-  /*elementos de lista (li)*/
-}
-.menu-lat ul li a {
-  text-decoration: none;
-  color: white;
-  border: 2px solid white;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  display: block;
-  transition-duration: 1s;
-  /*iconos*/
-}
-.menu-lat ul li a ul li a span {
-  padding-right: 5px;
-}
-.menu-lat ul li a ul li a span ul {
-  list-style: none;
-}
+  /*elementos de lista (li)*/ }
+  .menu-lat ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: block;
+    transition-duration: 1s;
+    /*iconos*/ }
+    .menu-lat ul li a ul li a span {
+      padding-right: 5px; }
+      .menu-lat ul li a ul li a span ul {
+        list-style: none; }
 
 /* h2 del inicios*/
 .center-inicio {
@@ -346,15 +218,13 @@ footer p {
   display: block;
   font-size: 30px;
   cursor: pointer;
-  transition-duration: 2s;
-}
+  transition-duration: 2s; }
 
 /* Video de introduccion*/
 .video {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
+  justify-content: center; }
 
 /*div contenedor de la seccion quien es Stephen*/
 .quien-fue-stephen {
@@ -362,43 +232,12 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Titulo de Quien fue stephe*/
-}
-.quien-fue-stephen .stephen {
-  color: whitesmoke;
-  text-align: center;
-  margin-top: 30px;
-}
+  /* Titulo de Quien fue stephe*/ }
+  .quien-fue-stephen .stephen {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px; }
 
-@media screen and (max-width: 1220px) {
-  .quien-fue-stephen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .quien-fue-stephen .info {
-    text-align: center;
-    padding: 50px;
-  }
-  .quien-fue-stephen .info .stephen-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .quien-fue-stephen .info .stephen-img .logros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  }
-  .quien-fue-stephen .info .stephen-img .logros .logros img {
-    width: 350px;
-    height: 350px;
-  }
-}
 /*parrafo de información*/
 .info {
   font-family: cursive;
@@ -406,8 +245,7 @@ footer p {
   margin-top: 20px;
   line-height: 30px;
   padding: 20px;
-  text-align: center;
-}
+  text-align: center; }
 
 /*div contenedor de logros*/
 .logros {
@@ -415,40 +253,114 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*elementos de lista*/
-}
-.logros li {
-  color: white;
-  font-family: cursive;
-  font-size: 20px;
-  text-shadow: black;
-  text-align: center;
-  padding-bottom: 10px;
-  list-style: none;
-}
+  /*elementos de lista*/ }
+  .logros li {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    text-shadow: black;
+    text-align: center;
+    padding-bottom: 10px;
+    list-style: none; }
 
 .logros p {
   /*parrafo informativo*/
   color: whitesmoke;
   font-family: cursive;
-  padding: 20px;
-}
+  padding: 20px; }
 
 /*seccion de footer*/
 footer {
   color: whitesmoke;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 /*hovers de algunos elementos*/
 .menu-lat ul li a:hover {
   background-color: black;
-  transform: translateX(15px);
-}
+  transform: translateX(15px); }
 
 .center-inicio:hover {
-  transform: scale(1.5);
-}
+  transform: scale(1.5); }
+
+/*Media Querys de Stephen Seccion*/
+@media screen and (max-width: 425px) {
+  header,
+  .inicio,
+  .seccion-inicio {
+    width: 100%;
+    background-image: none;
+    padding: 0px; }
+  .menu-lat {
+    justify-content: center; }
+    .menu-lat ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 25px; }
+  .video {
+    margin: 20px; }
+  .stephen {
+    margin-bottom: 10px; }
+  .info {
+    padding: 10px; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 100px;
+    text-align: center; }
+    header .inicio {
+      width: 100%;
+      text-align: center; }
+  .menu-lat {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .menu-lat ul {
+      display: flex;
+      list-style: none; }
+  .center-inicio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; }
+  .video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .quien-fue-stephen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px; }
+  .logros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px; } }
+
+@media screen and (max-width: 1220px) {
+  .info {
+    text-align: center;
+    padding: 50px; }
+  .stephen-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+@media screen and (max-width: 1220px) and (max-width: 1220px) {
+  .logros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; }
+    .logros img {
+      width: 350px;
+      height: 350px;
+      margin-top: 20px; } }
 
 /* ------------------seccion de registrate------------*/
 /* Elementos li de la lista*/
@@ -459,108 +371,68 @@ footer {
   padding: 8px;
   margin: 10px;
   text-align: center;
-  /* Elementos Href de los li*/
-}
-.menu-index-registrate li a {
-  color: whitesmoke;
-  text-decoration: none;
-  /* Iconos de la lista*/
-}
-.menu-index-registrate li a span {
-  margin-right: 8px;
-}
+  /* Elementos Href de los li*/ }
+  .menu-index-registrate li a {
+    color: whitesmoke;
+    text-decoration: none;
+    /* Iconos de la lista*/ }
+    .menu-index-registrate li a span {
+      margin-right: 8px; }
 
-@media screen and (min-width: 1220px) {
-  .menu-index-registrate li {
-    margin-left: 30px;
-  }
-  .menu-index-registrate li ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-index-registrate ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 591px) {
-  .menu-index-registrate ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-  .menu-index-registrate ul .titulo {
-    color: black;
-    background-color: Yellow;
-  }
-}
 /* titulo principal de la pagina*/
 .titulo {
   text-align: center;
   color: whitesmoke;
-  margin: 20px 0;
-}
+  margin: 20px 0; }
 
 /*Contenedor de los formularios*/
 .padre-formulario {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 /*Comienzo de formularios*/
 .formulario-1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
   align-items: center;
-}
-.formulario-1 .nombre,
-.formulario-1 .apellido,
-.formulario-1 .contraseña,
-.formulario-1 .email {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0px;
-  color: whitesmoke;
-  text-align: center;
-}
+  margin-bottom: 10px; }
+  .formulario-1 .nombre,
+  .formulario-1 .apellido,
+  .formulario-1 .contraseña,
+  .formulario-1 .email {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    color: whitesmoke;
+    text-align: center; }
 
 .formulario-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
-  color: whitesmoke;
-}
-.formulario-2 .gustos,
-.formulario-2 .gustos-1 {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
+  color: whitesmoke; }
+  .formulario-2 .gustos,
+  .formulario-2 .gustos-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px; }
 
 .gustos,
 .gustos-1 {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
-}
+  margin: 0 10px; }
 
 .gustos input,
 .gustos-1 input {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 label {
   border: 1px solid white;
   border-radius: 5px;
   padding: 8px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .formulario-3 {
   display: grid;
@@ -569,190 +441,153 @@ label {
   place-items: center;
   grid-template-rows: 5px 20px 20px;
   grid-row-gap: 10px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .formulario-4 {
   color: white;
   display: grid;
   grid-row-gap: 10px;
-  place-items: center;
-}
-.formulario-4 .seleccion,
-.formulario-4 .fechas {
-  margin: 20px 20px;
-  display: flex;
-  flex-direction: column;
-}
+  place-items: center; }
+  .formulario-4 .seleccion,
+  .formulario-4 .fechas {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column; }
 
 /*Final de formularios*/
 /*Botones del Formulario*/
 .botones {
   display: flex;
-  flex-direction: column;
-}
-.botones .botones-1 {
-  color: whitesmoke;
-  background-color: transparent;
-  border: white;
-  box-shadow: 1px 2px 2px white;
-  border: 2px solid white;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
+  flex-direction: column; }
+  .botones .botones-1 {
+    color: whitesmoke;
+    background-color: transparent;
+    border: white;
+    box-shadow: 1px 2px 2px white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer; }
 
 .botones-2 {
-  box-shadow: 18px 17px 40px 8px rgb(8, 8, 10), 18px 17px 40px 8px rgb(8, 8, 10) 18px 17px 40px 8px rgb(8, 8, 10);
+  box-shadow: 18px 17px 40px 8px #08080a, 18px 17px 40px 8px #08080a 18px 17px 40px 8px #08080a;
   background: #2E64FE;
   color: black;
   padding: 5px 20px;
-  margin: 20px 0px;
-}
+  margin: 20px 0px; }
+
+@media screen and (max-width: 1440px) {
+  .navegacion {
+    justify-content: center; } }
+
+/* Medias querys de Seccion Registrate*/
+@media screen and (min-width: 1220px) {
+  .menu-index-registrate ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; }
+    .menu-index-registrate ul li {
+      margin-left: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    color: black;
+    background-color: Yellow; }
+  .menu-index-registrate ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 591px) {
+  .titulo {
+    color: black;
+    background-color: white; }
+  .menu-index-registrate ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; } }
 
 /* Por ahora esto es todo de la seccion inicio*/
 .header-nikola {
   display: flex;
   justify-content: center;
-  /*titulo de la pagina*/
-}
-.header-nikola span {
-  color: #212054;
-  font-family: fantasy;
-  font-style: oblique;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  font-size: 60px;
-  width: 12ch;
-  border-right: 4px solid;
-  -webkit-animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-          animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
+  /*titulo de la pagina*/ }
+  .header-nikola span {
+    color: #212054;
+    font-family: fantasy;
+    font-style: oblique;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 35px;
+    width: 12ch;
+    border-right: 4px solid;
+    animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+    overflow: hidden; }
 
 @keyframes typing {
   from {
-    width: 0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+    width: 0; } }
+
 @keyframes blink {
   50% {
-    border-color: transparent;
-  }
-}
-@media screen and (max-width: 425px) {
-  .header-nikola {
-    background-image: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
-    width: 100%;
-  }
-  .header-nikola .nikola-span {
-    font-size: 40px;
-    text-align: center;
-    margin: auto;
-  }
-  .header-nikola .nikola-span .acerca-de-nikola {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 50px;
-  }
-  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe {
-    width: 300px;
-    height: 300px;
-  }
-  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla .el-bombillo {
-    font-size: small;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-  }
-  .header-nikola .nikola-span .acerca-de-nikola .descripcion-nikola iframe .la-radio-tesla .el-bombillo .rayos-x {
-    font-size: small;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-  }
-}
+    border-color: transparent; } }
+
 /*background-image*/
 .acerca-de-body {
-  background-image: url(https://wallpapercave.com/wp/wp1936436.jpg);
-}
+  background-image: url(https://wallpapercave.com/wp/wp1936436.jpg); }
 
 /*padre del parrafo informativo*/
 .acerca-de-nikola {
   text-align: center;
-  color: white;
-}
-.acerca-de-nikola span {
-  color: whitesmoke;
-  font-size: 25px;
-  font-weight: bolder;
-}
-.acerca-de-nikola p {
-  font-size: 20px;
-  font-weight: bolder;
-  color: white;
-  padding: 20px;
-  border: 1px solid white;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
+  color: white; }
+  .acerca-de-nikola span {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder; }
+  .acerca-de-nikola p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    border: 1px solid whitesmoke;
+    margin: 30px 90px; }
 
 /*--Seccion de Acerca de Nicola Tesla--*/
 .descripcion-nikola {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   align-items: center;
   margin-bottom: 20px;
-  /* Titulo del segundo parrafo*/
-}
-.descripcion-nikola h2 {
-  color: whitesmoke;
-}
+  /* Titulo del segundo parrafo*/ }
+  .descripcion-nikola h2 {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 /* menu lateral*/
 .menu-lat {
-  display: flex;
-}
-.menu-lat ul {
-  display: flex;
-  flex-direction: column;
-}
+  display: flex; }
+  .menu-lat ul {
+    display: flex;
+    flex-direction: column; }
+
+.titulo-principal {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 20px; }
 
 /* Empezamos con los Inventos de nicola*/
 .la-radio {
   text-align: center;
   color: whitesmoke;
-  margin: 0px 20px;
-}
+  margin: 0px 20px; }
 
 .la-radio-tesla p {
   text-align: center;
@@ -761,119 +596,160 @@ label {
   color: white;
   padding-top: 20px;
   border: 1px solid whitesmoke;
-}
+  margin: 30px 90px; }
 
 .la-radio-tesla h2 {
   margin-top: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
+.la-radio-tesla img {
+  width: 500px;
+  height: 350px; }
 
 .el-bombillo {
   text-align: center;
   color: whitesmoke;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-.el-bombillo p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bolder;
-  color: white;
-  padding-top: 20px;
-  border: 1px solid whitesmoke;
-}
+  margin-bottom: 20px; }
+  .el-bombillo h2 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .el-bombillo p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    border: 1px solid whitesmoke;
+    margin: 30px 90px; }
+  .el-bombillo img {
+    width: 472px;
+    height: 450px; }
 
 .rayos-x {
-  text-align: center;
-}
-.rayos-x h2 {
-  text-align: center;
-  color: whitesmoke;
-  margin: 0px 20px;
-}
-.rayos-x h2 p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bolder;
-  color: white;
-  padding-top: 20px;
-  border: 1px solid whitesmoke;
-}
-.rayos-x h2 p img {
-  margin-bottom: 30px;
-}
+  text-align: center; }
+  .rayos-x h2 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .rayos-x p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    border: 1px solid whitesmoke;
+    margin: 30px 90px; }
+  .rayos-x img {
+    margin-bottom: 30px; }
 
 .Otros-Inventos {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.Otros-Inventos img {
-  width: 70%;
-  height: 70%;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  opacity: 0.3;
-  transition: 2s;
-}
-.Otros-Inventos img p {
-  font-size: 20px;
-  font-weight: bolder;
-  color: white;
-  border: 1px solid whitesmoke;
-  text-align: center;
-  margin: 0px 50px;
-}
+  align-items: center; }
+  .Otros-Inventos p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    border: 1px solid whitesmoke;
+    margin: 30px 90px; }
+  .Otros-Inventos img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    opacity: 0.3;
+    transition: 2s; }
 
 /* hovers de algunos items*/
 .Otros-Inventos img:hover {
   opacity: 1;
-  transform: rotateX(45deg);
-}
+  transform: rotateX(45deg); }
+
+/* MQ DE LA SECCION DE ACERCA DE*/
+@media screen and (max-width: 425px) {
+  .header-nikola {
+    background-image: linear-gradient(276deg, #71c4ff 0%, #a100ff 100%);
+    width: 100%; }
+  .nikola-span {
+    font-size: 40px;
+    text-align: center;
+    margin: auto; }
+  .acerca-de-nikola {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; }
+  .descripcion-nikola iframe {
+    width: 300px;
+    height: 300px; }
+  .la-radio-tesla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .el-bombillo {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; }
+  .rayos-x {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; } }
+
+@media screen and (max-width: 584px) {
+  .descripcion-nikola iframe {
+    width: auto; } }
 
 /*Hasta Aca Seccion de Acerca de -Nikola Tesla-*/
 /*Comienza la seccion de contactanos*/
 /*encabezado de la pagina*/
 header {
-  color: ghost white;
+  color: white;
   font-style: oblique;
   font-weight: lighter;
   letter-spacing: 1px;
-  /*letra de la navbar de bootstrap*/
-}
-header .navbar-brand {
-  color: whitesmoke;
-}
+  /*letra de la navbar de bootstrap*/ }
+  header .navbar-brand {
+    color: whitesmoke; }
 
 /* Padre de menu lat*/
 .menu-lat {
-  align-items: center;
-}
+  align-items: center; }
 
 /* Padre de los Li de el menu lat*/
 .menu-lat ul {
-  padding-left: 0px;
-}
+  padding-left: 0px; }
 
 .titulo-galeria {
   color: whitesmoke;
   text-align: center;
   font-weight: lighter;
   font-size: 2.5rem;
-}
+  line-height: 1.6; }
 
 .mark {
   color: #171515;
-}
+  padding: 0px; }
 
 /* Padre de la galeria de Imagenes*/
 .padre-carousel {
   width: 50%;
   height: 50%;
   margin: auto;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 /* Padre de la seccion de barras de Progreso*/
 .padre-progress {
@@ -881,26 +757,22 @@ header .navbar-brand {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-}
-.padre-progress .progress {
-  width: 50%;
-  margin-bottom: 10px;
-}
+  margin-bottom: 20px; }
+  .padre-progress .progress {
+    width: 50%;
+    margin-bottom: 10px; }
 
 .area {
   text-align: center;
   color: whitesmoke;
   border: 1px solid white;
-  padding: 0px 10px;
-}
+  padding: 0px 10px; }
 
 /* Titulo de la seccion de la  barra de progreso*/
 .Titulo-progress {
   color: whitesmoke;
   text-align: center;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 /* Padre contactos*/
 .contactos {
@@ -908,46 +780,37 @@ header .navbar-brand {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*Padre de los Li de contacto*/
-}
-.contactos ul {
-  padding-left: 0px;
-  /* Contactos elementos de lista*/
-}
-.contactos ul li {
-  border: 2px solid white;
-  list-style: none;
-  margin-bottom: 10px;
-  padding: 0px 10px;
-}
+  /*Padre de los Li de contacto*/ }
+  .contactos ul {
+    padding-left: 0px;
+    /* Contactos elementos de lista*/ }
+    .contactos ul li {
+      border: 2px solid white;
+      list-style: none;
+      margin-bottom: 10px;
+      padding: 0px 10px; }
 
 /*Footer de seccion Contacto*/
 footer {
-  text-align: center;
-}
+  text-align: center; }
 
 /* Hover de elementos*/
 .verde:hover {
   cursor: pointer;
-  background-color: #128c7e;
-}
+  background-color: #128c7e; }
 
 .azul:hover {
   cursor: pointer;
-  background-color: #1DA1F2;
-}
+  background-color: #1DA1F2; }
 
 .instagram:hover {
   cursor: pointer;
-  background-color: #E4405F;
-}
+  background-color: #E4405F; }
 
 .facebook:hover {
   cursor: pointer;
-  background-color: #3b5998;
-}
+  background-color: #3b5998; }
 
 .github:hover {
   cursor: pointer;
-  background-color: #171515;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #171515; }

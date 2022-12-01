@@ -2,8 +2,8 @@
 .header-nikola {
     display: flex;
     justify-content: center;
-    
-    
+
+
     /*titulo de la pagina*/
     span {
         color: #212054;
@@ -12,7 +12,7 @@
         font-weight: lighter;
         letter-spacing: 1px;
         font-size: 35px;
-        width:12ch;
+        width: 12ch;
         border-right: 4px solid;
         animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
         overflow: hidden;
@@ -53,14 +53,7 @@
     }
 
     p {
-        font-size: 20px;
-        font-weight: bolder;
-        color: white;
-        padding: 20px;
-        border: 1px solid $color-primario-2;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        @include parrafos-acerca-de;
     }
 }
 
@@ -78,6 +71,7 @@
     /* Titulo del segundo parrafo*/
     h2 {
         color: $color-primario;
+        @include h2-acerca-de;
     }
 
 }
@@ -91,6 +85,12 @@
         display: flex;
         flex-direction: column;
     }
+}
+
+.titulo-principal {
+    text-align: center;
+    color: $color-primario;
+    margin-bottom: 20px;
 }
 
 /* Empezamos con los Inventos de nicola*/
@@ -107,8 +107,12 @@
 }
 
 .la-radio-tesla h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    @include h2-acerca-de;
+}
+
+.la-radio-tesla img {
+    width: 500px;
+    height: 350px;
 }
 
 .el-bombillo {
@@ -117,10 +121,21 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
+    h2 {
+        @include h2-acerca-de;
+    }
+
     p {
         @include parrafos-acerca-de;
     }
+
+    img {
+        width: 472px;
+        height: 450px;
+    }
+
 }
+
 
 
 .rayos-x {
@@ -128,6 +143,7 @@
 
     h2 {
         color: $color-primario-2;
+        @include h2-acerca-de;
     }
 
     p {
@@ -227,6 +243,10 @@
     }
 }
 
-
+@media screen and (max-width:584px) {
+    .descripcion-nikola iframe {
+        width: auto;
+    }
+}
 
 /*Hasta Aca Seccion de Acerca de -Nikola Tesla-*/

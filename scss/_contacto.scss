@@ -3,7 +3,7 @@
 /*encabezado de la pagina*/
 
 header {
-    color:$color-primario-2;
+    color: $color-primario-2;
     font-style: oblique;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -29,10 +29,12 @@ header {
     text-align: center;
     font-weight: lighter;
     font-size: 2.5rem;
+    line-height: 1.6;
 }
 
 .mark {
     color: #171515;
+    padding: 0px;
 }
 
 /* Padre de la galeria de Imagenes*/
@@ -78,7 +80,7 @@ header {
 .contactos {
     color: $color-primario-2;
     @include flex-direction-column-center-align-items;
-    
+
     /*Padre de los Li de contacto*/
     ul {
         padding-left: 0px;
