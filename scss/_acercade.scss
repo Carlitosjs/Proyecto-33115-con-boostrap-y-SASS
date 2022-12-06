@@ -225,7 +225,7 @@
         align-items: center;
         text-align: center;
 
-        img{
+        img {
             @include img;
         }
     }
@@ -237,7 +237,7 @@
         text-align: center;
         margin: 0;
 
-        img{
+        img {
             @include img;
         }
     }
@@ -249,22 +249,24 @@
         text-align: center;
         margin: 0;
 
-        img{
+        img {
             @include img;
         }
     }
 }
 
-@media screen and (max-width:510px){
- .el-bombillo img{
-    @include img;
- }
- .rayos-x img{
-    @include img;
- }
- .la-radio-tesla img{
-    @include img;
- }
+@media screen and (max-width:510px) {
+    .el-bombillo img {
+        @include img;
+    }
+
+    .rayos-x img {
+        @include img;
+    }
+
+    .la-radio-tesla img {
+        @include img;
+    }
 }
 
 @media screen and (max-width:584px) {
