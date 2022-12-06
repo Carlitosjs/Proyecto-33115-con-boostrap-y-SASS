@@ -692,6 +692,9 @@ label {
     justify-content: center;
     align-items: center;
     text-align: center; }
+    .la-radio-tesla img {
+      width: 250px;
+      height: 250px; }
   .el-bombillo {
     font-size: small;
     display: flex;
@@ -700,6 +703,9 @@ label {
     align-items: center;
     text-align: center;
     margin: 0; }
+    .el-bombillo img {
+      width: 250px;
+      height: 250px; }
   .rayos-x {
     font-size: small;
     display: flex;
@@ -707,7 +713,21 @@ label {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0; } }
+    margin: 0; }
+    .rayos-x img {
+      width: 250px;
+      height: 250px; } }
+
+@media screen and (max-width: 510px) {
+  .el-bombillo img {
+    width: 250px;
+    height: 250px; }
+  .rayos-x img {
+    width: 250px;
+    height: 250px; }
+  .la-radio-tesla img {
+    width: 250px;
+    height: 250px; } }
 
 @media screen and (max-width: 584px) {
   .descripcion-nikola iframe {
