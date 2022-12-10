@@ -39,12 +39,15 @@ header {
 
 /* Padre de la galeria de Imagenes*/
 .padre-carousel {
-    width: 50%;
-    height: 50%;
+    width: 600px;
     margin: auto;
     margin-bottom: 10px;
 }
 
+.carousel-item{
+    height: 480px;
+    text-align: center;
+}
 /* Padre de la seccion de barras de Progreso*/
 
 .padre-progress {
@@ -82,6 +85,8 @@ header {
     /*Padre de los Li de contacto*/
     ul {
         padding-left: 0px;
+        display: flex;
+        gap: 10px;
 
 
         /* Contactos elementos de lista*/
@@ -93,6 +98,7 @@ header {
         }
     }
 }
+
 
 /*Footer de seccion Contacto*/
 
@@ -124,4 +130,12 @@ footer {
 .github:hover {
     cursor: pointer;
     background-color: #171515;
+}
+
+/* Media query de elementos li de Ul de Contactos*/
+@media screen and (max-width:632px) {
+    .contactos ul{
+        @include flex-direction-column-center-align-items;
+    }
+    
 }
